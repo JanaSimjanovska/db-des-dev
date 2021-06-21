@@ -13,7 +13,7 @@ cross join dbo.AchievementType a
 select * from dbo.Teacher
 select * from dbo.Grade
 
-select t.FirstName + ' ' + t.LastName as Teacher
+select distinct t.FirstName + ' ' + t.LastName as Teacher
 from dbo.Teacher t
 inner join dbo.Grade g on t.ID = TeacherID 
 
